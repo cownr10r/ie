@@ -1,7 +1,9 @@
 #' recommend_initial is a package to help make institutional effectiveness easier by tidying data to one row to one case and other actions
-#' @param a a file generated from Pearson downloads for students seeking initial certification
-#' @param b the academic year in question, surrounded in quotes
-#' @return a data frame with decisions to recommend or not.
+#' @param a A file generated from Pearson downloads for students seeking initial certification
+#' @param b The academic year in question, surrounded in quotes
+#' @import "stats"
+#' @return A data frame with decisions to recommend or not.
+#' @export
 
 
 
