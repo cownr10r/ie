@@ -17,6 +17,8 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: 
+    magrittr,
+    tidyr,
     stats
 URL: https://github.com/cownr10r/ie
 BugReports: https://github.com/cownr10r/ie/issues
