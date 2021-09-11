@@ -6,7 +6,7 @@ Authors@R:
            family = "Martinez",
            role = c("aut", "cre"),
            email = "mario.a.martinez@live.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = 0000-0003-4244-2985))
 Description: The package helps with initial and advanced recommendations for students seeking certification status changes.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -14,6 +14,8 @@ LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests: 
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: 
@@ -22,3 +24,4 @@ Imports:
     stats
 URL: https://github.com/cownr10r/ie
 BugReports: https://github.com/cownr10r/ie/issues
+VignetteBuilder: knitr
