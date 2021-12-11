@@ -21,7 +21,9 @@ Config/testthat/edition: 3
 Imports: 
     magrittr,
     tidyr,
-    stats
+    stats,
+    readxl,
+    qpdf
 URL: https://github.com/cownr10r/ie
 BugReports: https://github.com/cownr10r/ie/issues
 VignetteBuilder: knitr
