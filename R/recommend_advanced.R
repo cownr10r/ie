@@ -13,7 +13,7 @@ recommend_advanced <- function(a,b,d,e,f) {
 
 
 
-  a1 <- a[,c("Examinee Name", "TEAID", "Exam", "Exam Date", "Pass / Fail Status")]
+  a1 <- a[,c("Examinee Name", "TEAID", "Exam Code", "Exam Date", "Pass / Fail Status")]
 
 
 
@@ -22,6 +22,8 @@ recommend_advanced <- function(a,b,d,e,f) {
 
 
   names(a1)[1] <- "Name"
+
+  names(a1) <- "Exam"
 
 
 
