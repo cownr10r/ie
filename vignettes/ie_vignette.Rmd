@@ -1,0 +1,48 @@
+---
+title: "The ie Package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ie_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+## Introduction
+
+Institutional effectiveness departments across higher education have as major goals providing data to requesting parties, and data analysis to answer research questions that revolve around planning, predictive analysis, and so on. In most data requests a major goal is to download data from repositories, clean the data, and then model it. This activity can be captured in Wickham and Grolemund's (2016) visualization below.
+
+Many R packages function at later parts of Wickham and Grolemund's (2016) conceptual model, more or less at the "understand" portion in the grey area. 
+
+![Wickham (2016)](c:/users/mario/OneDrive/Desktop/ie/vignettes/wickham_2016.png)
+
+
+However, the ie package works at the points of "import" and "tidy", while being very specific to the purposes of institutional effectiveness offices that deal with educator certification in the state of Texas (However, the process can be modified towards other states' requirements for testing leading to certification). There are roughly 184 public and private colleges and universities in Texas, and many of them have education programs leading to educator certification. This means that the ie package has the potential to affect the workload of many institutional effectiveness workers that focus on importing and cleaning data.
+
+The philosophy behind the ie package is that it should be specific to the professional of institutional effectiveness dealing with educator certification data. Downloads come from major education repositories, and should be imported into R with minimum change to spreadsheets as possible (except when the downloaded format requires human intervention). 
+
+## File Types
+
+
+
+
+```{r setup}
+library(ie)
+a <- "C:\\Users\\mario\\OneDrive\\Desktop\\advanced\\pearson test scores ---a.xlsx"
+a1 <- readxl::read_excel(a)
+print(a1)
+
+```
+
+
+## References
+
+THED.(2018). Texas Higher Education Data. Retrieved from http://www.txhighereddata.org/Interactive/Institutions.cfm
+
+Wickham, H., & Grolemund, G. (2016). R for data science: Import, tidy, transform, visualize, and model data (First edition). O'Reilly.
+
