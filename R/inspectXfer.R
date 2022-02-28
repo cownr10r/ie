@@ -248,8 +248,8 @@ final <- merge(trans2, now, by = "ID", all.x = T) #carry forward english
 
 
   final9 <- final %>%
-    group_by(ID) %>%
-    distinct(subcat,.keep_all = TRUE)
+    dplyr::group_by(ID) %>%
+    dplyr::distinct(subcat,.keep_all = TRUE)
 
   final9$Unit.Taken <- as.numeric(final9$Unit.Taken)
 

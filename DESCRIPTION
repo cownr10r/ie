@@ -23,7 +23,8 @@ Imports:
     tidyr,
     stats,
     readxl,
-    qpdf
+    qpdf,
+    dplyr
 URL: https://github.com/cownr10r/ie
 BugReports: https://github.com/cownr10r/ie/issues
 VignetteBuilder: knitr
