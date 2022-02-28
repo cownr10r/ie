@@ -34,8 +34,10 @@ The philosophy behind the ie package is that it should be specific to the profes
 ```{r setup}
 library(ie)
 library(readxl)
-a <- "C:\\Users\\mario\\OneDrive\\Desktop\\advanced\\pearson test scores ---a.xlsx"
-(a1 <- readxl::read_excel(a))
+p <- "C:\\Users\\mario\\OneDrive\\Desktop\\advanced\\"
+(a1 <- readxl::read_excel(paste0(p, "pearson test scores ---a.xlsx")))
+
+(b <- readxl::read_excel(paste0(p, "pasl scorses 9-13-21 b.xlsx")))
 
 
 ```
