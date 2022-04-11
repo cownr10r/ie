@@ -87,7 +87,7 @@ uh3 <- uh2[!grepl("NCR",uh2$Grade),]
 Get CONTENT GPA
 
 ``` r
-data <- data.frame(rbind(uh2,verified)) %>%
+data <- data.frame(rbind(uh3,verified)) %>%
   .[order(.$ID),] 
 ## STOP HERE AND INSPECT CAREFULLY.
 
