@@ -13,11 +13,17 @@ knitr::opts_chunk$set(echo = TRUE)
 
 GOAL: get file with all people, no dups. AND bilinguals and SPEDS without duplicating core rows
 1.	grab bilingual rows with grepl
+
 2.	Then take out bilingual rows from original dataframe (call it orig) to make generic data frame without bilingual. Now there are 2 data frames (orig + bilin).
+
 3.	Take out all IDs identifying bilinguals from orig data frame.
+
 4.	paste bilin to orig. Then you have no dups.
+
 5.	Do the same with SPED
+
 6.	first delete advanced
+
 The file starts from a finisher file that has been downloaded from ecos as finisher file.
 
 
